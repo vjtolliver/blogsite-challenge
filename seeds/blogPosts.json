@@ -1,14 +1,17 @@
 [
     {
       "title": "What do you think of handlebars?",
-      "content": "I loveee it!!"
+      "content": "I loveee it!!",
+      "user_id": 1
     },
     {
       "title": "Bootstrap Tutorial",
-      "content": "Step 1. Look up Bootstrap. Step 2. Read Docs. Step 3. Done"
+      "content": "Step 1. Look up Bootstrap. Step 2. Read Docs. Step 3. Done",
+      "user_id": 2
     },
     {
       "title": "Coding is Amazing!",
-      "content": "I love coding because..."
+      "content": "I love coding because...",
+      "user_id": 3
     }
   ]

@@ -1,8 +1,12 @@
 [
     {
-      "thecomment": "I completely agree."
+      "thecomment": "I completely agree.",
+      "user_id": 4,
+      "post_id": 1
     },
     {
-      "the comment": "Wow! Very informative"
+      "the comment": "Wow! Very informative",
+      "user_id": 5,
+      "post_id": 2
     }
   ]

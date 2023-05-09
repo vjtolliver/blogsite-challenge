@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Site</title>
+  <link rel="stylesheet" href="/css/jass.css">
+</head>
+
+<body>
+    <header class="display-flex justify-space-between align-center p-2">
+      <h1>
+        The Code Blog
+      </h1>
+
+      <nav>
+        <a href="/">Homepage</a>
+        <a href="/dashboard" style="margin-left: 4rem;">Dashboard</a>
+        {{#if logged_in}}
+          <a id="logout" style="margin-left: 4rem;">Log out</a>
+        {{else}}
+          <a href="/login" style="margin-left: 4rem;">Log in</a>
+        {{/if}}
+      </nav>
+
+    </header>
+    <main class="container container-fluid mt-5">
+      {{{body}}}
+    </main>
+    <footer>
+
+    </footer>
+
+    {{#if logged_in}}
+      <script src="/logout.js"></script>
+    {{/if}}
+
+    </body>
+
+</html>

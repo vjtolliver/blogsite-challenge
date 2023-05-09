@@ -1,14 +1,13 @@
 Public - JS
--Login
+-Login & Sign Up
 -LogOut
--Sign Up
 -BlogPost
 -Add Comments
 
 API JS
--Sign Up, User.create -Done
--Blog Post, Post.create -Done
--Add Comments -Done
+-Sign Up, User.create -DONE
+-Blog Post, Post.create -DONE
+-Add Comments -DONE
 
 Routes Needed
 -Get one specific post ( connects to post.hb) homepage and dash ( connects to updatepost.hb) DONE
@@ -17,16 +16,14 @@ Routes Needed
 -Get all posts ( connects to homepage.hb ) DONE
 
 Views hb
-HOMEPAGE - with all posts and nav bar to dashboard and login or logout depending on status
+HOMEPAGE - with all posts and nav bar to dashboard and login or logout depending on status - DONE
 
-DASHBOARD - Page with all specific users posts with update or delete buttons and with add a post button
+DASHBOARD - Page with all specific users posts with update or delete buttons and with add a post button - DONE
 
-CREATEPOST - Add A Blog Post Form Page
+CREATEPOST - Add A Blog Post Form Page - DONE
 
-LOGIN - Login form
+LOGIN & SIGNUP - Login form - DONE
 
-SIGNUP - Sign Up Form  ?
+POST - Specific Post Page with Add Comments Form - DONE
 
-POST - Specific Post Page with Add Comments Form
-
-UPDATEPOST - From Dashboard to update existing posts
+UPDATEPOST - From Dashboard to update existing posts - DONE

@@ -1,0 +1,47 @@
+<section id="post-data">
+{{#each posts as |post| }}
+<div class="row align-center mb-5">
+  <div class="col-md-6 hpposttitle">
+    <h2><a href="/homepage/post/{{post.id}}">{{post.title}}</a></h2>
+  </div>
+  <div class="col-md-6 hppost">
+    <p>{{post.content}}</p>
+    <br>
+  </div>
+    <div class="hppostdata">
+    <p>Posted: {{post.date_created}}. By: {{post.user_id}}</p>
+  </div>
+</div>
+{{/each}}
+</section>
+<section id="comment-data">
+    {{#each comments as |comment| }}
+<div class="row align-center mb-5">
+  <div class="col-md-6 user-of-comment">
+    <p>{{user.username}}</p>
+  </div>
+  <div class="col-md-6 thecomment">
+    <p>{{comment.thecomment}}</p>
+    <br>
+  </div>
+    <div class="commentdate">
+    <p>Posted: {{comment.date_created}}</p>
+  </div>
+</div>
+{{/each}}
+</section>
+<section id="addcomments">
+    <h2>Add Comment:</h2>
+
+<form class='form addcomment-form'>
+  <div class='form-group'>
+    <label for='comments'>Insert Comment</label>
+    <textarea class='form-input' type='text' id='comment-here'></textarea>
+  </div>
+  <div class='form-group'>
+    <button class='btn btn-primary' type='submit'>Submit</button>
+  </div>
+</form>
+</section>
+
+<script src='/addcomments.js'></script>

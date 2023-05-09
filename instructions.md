@@ -1,8 +1,9 @@
 Public - JS
--Login & Sign Up
--LogOut
--BlogPost
--Add Comments
+-Login & Sign Up                 login.js                         DONE
+-LogOut                          logout.js                        DONE
+-BlogPost                        createpost.js                    DONE
+-Add Comments                    addcomments.js                   DONE
+-Update and delete               updatepost.js                    DONE
 
 API JS
 -Sign Up, User.create -DONE

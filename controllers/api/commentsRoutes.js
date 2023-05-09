@@ -16,7 +16,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-// Questioning from post. Check mini project readme for help
+// Questioning from post. Check class readme for help
 // router.get('/', async (req, res) => {
 //   try {
 //     const comments = await P.findAll();

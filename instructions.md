@@ -6,14 +6,27 @@ Public - JS
 -Add Comments
 
 API JS
--Sign Up, User.create
--Blog Post, Post.create
--Add Comments
+-Sign Up, User.create -Done
+-Blog Post, Post.create -Done
+-Add Comments -Done
+
+Routes Needed
+-Get one specific post ( connects to post.hb) homepage and dash ( connects to updatepost.hb) DONE
+-Get new blog post page (connects to createpost.hb) DONE
+-Get all user posts ( connects to dashboard.hb) DONE
+-Get all posts ( connects to homepage.hb ) DONE
 
 Views hb
-Homepage with all posts and nav bar to dashboard and login or logout depending on status
-Dashboard Page with all specific users posts with update or delete buttons and with add a post button
-Add A Blog Post Form Page
-Log In Page
-Log Out Page
-Specific Post Page with Add Comments Form
+HOMEPAGE - with all posts and nav bar to dashboard and login or logout depending on status
+
+DASHBOARD - Page with all specific users posts with update or delete buttons and with add a post button
+
+CREATEPOST - Add A Blog Post Form Page
+
+LOGIN - Login form
+
+SIGNUP - Sign Up Form  ?
+
+POST - Specific Post Page with Add Comments Form
+
+UPDATEPOST - From Dashboard to update existing posts

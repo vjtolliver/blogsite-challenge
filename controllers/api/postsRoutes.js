@@ -17,30 +17,40 @@ router.post('/', async (req, res) => {
 });
 
 // Is this needed? or just repeated?
-router.get('/', async (req, res) => {
-  try {
-    const posts = await Post.findAll();
+// router.get('/', async (req, res) => {
+//   try {
+//     const posts = await Post.findAll();
 
-    const manyPosts = posts.get({ plain: true });
+//     const manyPosts = posts.get({ plain: true });
 
-    res.render('homepage', { manyPosts });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
+//     res.render('homepage', { manyPosts });
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+// });
 
-router.get('/:id', async (req, res) => {
+router.put('/:id', async (req, res) => {
   try {
     const postid = await Post.findByPk(req.params.id, {});
 
     
-    const post = postid.get({ plain: true });
+    // const post = postid.get({ plain: true });
 
-    res.render('post', { post });
+    // res.render('post', { post });
+
+    if (req.session.user_id !== postid.user_id) {
+      res.status(404).json({ message: 'Unauthorized Access' });
+      return;
+    }
+
+    postid = await Post.update(req.body, {
+        where: {
+            id: req.params.id,
+        },
+    });
 
     if (!postid) {
-      res.status(404).json({ message: 'Blog Post Not Found' });
-      return;
+        return res.status(500).json({message: 'Blog Post Not Found'})
     }
 
   } catch (err) {

@@ -12,7 +12,7 @@ const loginForm = async (event) => {
       });
   
       if (response.ok) {
-        document.location.replace('/');
+        document.location.replace('/dashboard');
       } else {
         alert('Failed to log in');
       }
@@ -20,7 +20,7 @@ const loginForm = async (event) => {
   };
   
   document
-    .querySelector('.login-form')
+    .querySelector('.login-btn')
     .addEventListener('submit', loginForm);
 
     const signupForm = async (event) => {

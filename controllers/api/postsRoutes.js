@@ -31,7 +31,7 @@ router.post('/', async (req, res) => {
 
 router.put('/:id', async (req, res) => {
   try {
-    const postid = await Post.findByPk(req.params.id, {});
+    const postid = await Post.findByPk(req.params.id);
 
     
     // const post = postid.get({ plain: true });

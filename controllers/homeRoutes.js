@@ -19,11 +19,11 @@ router.get('/', async (req, res) => {
 
 router.get('/post/:id', async (req, res) => {
     try {
-        const onePost = await Post.findByPk({
+        const onePost = await Post.findByPk(req.params.id, {
             include: 
-            [{ model: User }, { model: Comment, include: { model: User } }]
+            [{ model: User }, { model: Comments, include: { model: User } }]
         });
-        const thePost = onePost.map((post) => post.get({ plain: true}));
+        const thePost =  onePost.get({ plain: true });
     
     res.render('post', { thePost } );
 
